@@ -1,3 +1,4 @@
+import 'package:final_mobile/core/widgets/connectivity_wrapper.dart';
 import 'package:final_mobile/features/home/home_screen.dart';
 import 'package:final_mobile/providers/book_provider.dart';
 import 'package:final_mobile/providers/chat_provider.dart';
@@ -30,7 +31,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const ConnectivityWrapper(
+        child: HomeScreen(),
+      ),
     );
   }
 }

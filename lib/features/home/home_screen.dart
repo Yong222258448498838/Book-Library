@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      backgroundColor: const Color(0xFFF5F5F5),
+      backgroundColor: const Color.fromARGB(255, 245, 242, 242),
       appBar: AppBar(
         title: Text(_titles[_selectedIndex]),
         centerTitle: false,
@@ -68,10 +68,10 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Container(
                 padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 34, 26, 26).withValues(alpha: 0.10),
+                  color: const Color.fromARGB(255, 49, 48, 48).withValues(alpha: 0.10),
                   borderRadius: const BorderRadius.all(Radius.circular(90)),
                   border: Border.all(
-                    color: const Color.fromARGB(255, 171, 164, 164).withValues(alpha: 0.05),
+                    color: const Color.fromARGB(255, 87, 82, 82).withValues(alpha: 0.05),
                   ),
                   boxShadow: [
                     BoxShadow(
@@ -161,8 +161,8 @@ class _BottomNavItem extends StatelessWidget {
                 isActive ? activeIcon : icon,
                 size: 30,
                 color: isActive
-                    ? const Color.fromARGB(255, 83, 20, 229)
-                    : const Color.fromARGB(179, 255, 255, 255),
+                    ? const Color.fromARGB(255, 12, 248, 4)
+                    : const Color.fromARGB(179, 255, 245, 245),
               ),
             ],
           ),
@@ -185,7 +185,7 @@ class AnimatedBar extends StatelessWidget {
       height: 4,
       width: isActive ? 20 : 0,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 83, 20, 229),
+        color: Color.fromARGB(255, 15, 220, 8),
         borderRadius: BorderRadius.all(Radius.circular(15)),
       ),
     );
